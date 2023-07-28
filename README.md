@@ -3,9 +3,9 @@
 
 ## Requisitos
 
-PHP >= 8.1
-Sistema Linux/Unix
-Git
+- PHP >= 8.1
+- Sistema Linux/Unix
+- Git
 
 ### Dependencias adicionales
 
@@ -28,8 +28,8 @@ apt install openssl
 ## Guía de inicio
 
 ### Paso 1. Clonar repositorio
-Clona este repositorio en tu sistema Linux/Unix
-Utiliza el siguiente comando:
+- Clona este repositorio en tu sistema Linux/Unix
+- Utiliza el siguiente comando:
 
     git clone nombre_del_repositorio
 
@@ -64,6 +64,7 @@ Si utilizas en tu proyecto la biblioteca *GuzzleHttp* para realizar las peticion
 **IMPORTANTE:**
 El certificado cdc (Círculo de Crédito) es otorgado únicamente por Círculo de Crédito a través de su portal de desarrolladores. Este certificado NO es generado por el cliente/otorgante.
 
+```php
     use \GuzzleHttp\Client;
     use \GuzzleHttp\HandlerStack;
     use \Signer\Manager\Interceptor\SignatureService
@@ -86,6 +87,7 @@ El certificado cdc (Círculo de Crédito) es otorgado únicamente por Círculo d
     // Now use the HTTP client and it will automatically sign the requests, as well as validate the responses.
     
     // ...
+```
 
 ### Paso 6. Opcional
 Utilice directamente la clase *SignatureService* para generar y validar manualmente la firma digital 'x-signature', o utilice la clase para integrarla en su flujo de desarrollo para un uso personalizado.
