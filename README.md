@@ -31,7 +31,9 @@ apt install openssl
 - Clona este repositorio en tu sistema Linux/Unix
 - Utiliza el siguiente comando:
 
+```sh
     git clone nombre_del_repositorio
+```
 
 ### Paso 2. Generar llaves criptográficas
 
@@ -53,9 +55,9 @@ Agrega la dependencia de este componente signature-manager-php en tu código PHP
 
 Ejecuta el comando de Composer para instalar la dependencia, dependiendo del caso se tendrá que ejecutar el comando *install* o *update*.
 
+```sh
     composer install
-
-    composer update
+```
 
 ### Paso 5. Uso del componente de firmado
 
@@ -67,8 +69,8 @@ El certificado cdc (Círculo de Crédito) es otorgado únicamente por Círculo d
 ```php
     use \GuzzleHttp\Client;
     use \GuzzleHttp\HandlerStack;
-    use \Signer\Manager\Interceptor\SignatureService
-    use \Signer\Manager\Interceptor\MiddlewareEvents
+    use \Signer\Manager\Interceptor\SignatureService;
+    use \Signer\Manager\Interceptor\MiddlewareEvents;
     // ...
     
     // Configure the SignatureService
