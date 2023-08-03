@@ -1,6 +1,6 @@
 {
-    "name": "apihub-cdc/signature-manager",
-    "description": "",
+    "name": "apihub-cdc/signature-manager-php-8",
+    "description": "PHP 8 Signature component for Círculo de Crédito APIs",
     "keywords": [
         "apihub",
         "php",
